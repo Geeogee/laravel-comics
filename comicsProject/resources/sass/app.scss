@@ -1,1 +1,16 @@
-//
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: "PT Sans Narrow", sans-serif;
+}
+
+@import 'placeholders';
+@import 'mixins';
+@import 'typography';
+@import 'variables';
+@import 'header';
