@@ -2,13 +2,13 @@
 
     height: 400px;
     width: 100%;
-    
+
     img {
 
         height: 100%;
         width: 100%;
-        object-fit: cover; 
-        object-position: right top;       
+        object-fit: cover;
+        object-position: right top;
     }
 }
 
@@ -19,7 +19,7 @@
 
     .buy-links {
 
-        @include flex(row,space-between,center);
+        @include flex(row, space-between, center);
         list-style-type: none;
 
         img {
@@ -29,9 +29,9 @@
             margin-right: 5px;
         }
 
-        & > li > a {
-            
-            @include flex(row,space-between,center);
+        &>li>a {
+
+            @include flex(row, space-between, center);
             text-decoration: none;
         }
 
