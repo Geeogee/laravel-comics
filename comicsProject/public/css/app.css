@@ -70,3 +70,50 @@ nav .nav-bar .nav-links > li {
   margin: 0 20px;
 }
 
+.jumbotron {
+  height: 400px;
+  width: 100%;
+}
+
+.jumbotron img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: right top;
+     object-position: right top;
+}
+
+.merchandise {
+  background-color: #0282f9;
+  padding: 30px 0;
+}
+
+.merchandise .buy-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+
+.merchandise .buy-links img {
+  width: 40px;
+  height: auto;
+  margin-right: 5px;
+}
+
+.merchandise .buy-links > li > a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+}
+
+.merchandise .buy-links .merch-text {
+  color: #FFF;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+

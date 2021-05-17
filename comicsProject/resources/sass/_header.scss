@@ -4,7 +4,7 @@
 }
 
 .header-top {
-    
+
     background-color: $azure-radiance;
     color: $white;
     text-transform: uppercase;
@@ -17,7 +17,7 @@
         @include flex(row, flex-end, center);
         list-style-type: none;
 
-        & > li {
+        &>li {
 
             margin: 0 10px;
         }
@@ -48,12 +48,12 @@ nav {
             color: $charcoal;
             font-size: $medium-font;
             font-weight: 700;
-    
-            & > li {
-    
+
+            &>li {
+
                 margin: 0 20px;
             }
         }
     }
-  
+
 }
