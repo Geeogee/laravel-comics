@@ -64,6 +64,25 @@ footer {
         background-color: #303030;
         padding: 20px 0;
 
+        #sign-up-btn {
+
+            padding: 20px 10px;
+            border: 2px solid $azure-radiance;
+            background-color: transparent;
+            color: $white;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: $base-font;
+        }
+
+        #follow-us {
+
+            color: $azure-radiance;
+            text-transform: uppercase;
+            font-size: $medium-font;
+            font-weight: 700;
+        }
+
         .footer-social {
 
             @include flex(row, space-between, center);

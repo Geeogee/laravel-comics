@@ -187,13 +187,17 @@
         <div class="container">
             <ul class="footer-social">
                 <li>
-                    <button>
+                    <button id="sign-up-btn">
                         Sign-up now!
                     </button>
                 </li>
                 <li>
                     <ul class="social-links">
-                        <li>Follow us</li>
+                        <li>
+                            <span id="follow-us">
+                                Follow us
+                            </span>
+                        </li>
                         <li>
                             <a href="#">
                                 <img src=" {{ asset('storage/assets/footer-facebook.png') }} ">
