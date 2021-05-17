@@ -84,6 +84,60 @@ nav .nav-bar .nav-links > li {
      object-position: right top;
 }
 
+.comics {
+  padding: 50px 0;
+  background-color: #1c1c1c;
+  position: relative;
+}
+
+.comics .section-label {
+  width: 200px;
+  height: 50px;
+  background-color: #0282f9;
+  position: absolute;
+  top: -25px;
+  left: 10%;
+  color: #FFF;
+  font-size: 25px;
+  text-transform: uppercase;
+  line-height: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.comics .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.comics .comic {
+  margin: 0 10px;
+  flex-basis: calc(100% / 6 - 20px);
+}
+
+.comics .comic .comic-cover {
+  height: 200px;
+  width: 100%;
+}
+
+.comics .comic .comic-cover img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top center;
+     object-position: top center;
+}
+
+.comics .comic .comic-name {
+  min-height: 50px;
+  color: #FFF;
+  text-transform: uppercase;
+}
+
 .merchandise {
   background-color: #0282f9;
   padding: 30px 0;

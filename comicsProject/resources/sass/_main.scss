@@ -12,6 +12,61 @@
     }
 }
 
+.comics {
+
+    padding: 50px 0;
+    background-color: $eerie-black;
+    position: relative;
+
+    .section-label {
+
+        width: 200px;
+        height: 50px;
+        background-color: $azure-radiance;
+        position: absolute;
+        top: -25px;
+        left: 10%;
+        color: $white;
+        font-size: $large-font;
+        text-transform: uppercase;
+        line-height: 50px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .container {
+
+        @include flex(row,center,center);
+        flex-wrap: wrap;
+
+    }
+
+    .comic {
+        margin: 0 10px;
+        flex-basis: calc(100% / 6 - 20px);
+
+        .comic-cover {
+            height: 200px;
+            width: 100%;
+
+            img {
+
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                object-position: top center;
+            }
+        }
+
+        .comic-name {
+
+            min-height: 50px;
+            color: $white;
+            text-transform: uppercase;
+        }
+    }
+}
+
 .merchandise {
 
     background-color: $azure-radiance;

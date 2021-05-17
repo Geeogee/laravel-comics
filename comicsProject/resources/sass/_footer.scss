@@ -14,9 +14,9 @@ footer {
 
         .container {
 
-            @include flex(row,space-between,flex-start);
+            @include flex(row, space-between, flex-start);
         }
-  
+
         .list-title {
 
             color: $white;
@@ -29,12 +29,12 @@ footer {
 
             flex-basis: 50%;
             height: 400px;
-            @include flex(row,bull,center);
+            @include flex(row, bull, center);
 
-            & > ul {
+            &>ul {
 
                 width: 50%;
-                @include flex(row,space-between,flex-start);
+                @include flex(row, space-between, flex-start);
             }
 
             a {
@@ -58,7 +58,7 @@ footer {
             }
         }
     }
-    
+
     .footer-bot {
 
         background-color: #303030;
@@ -66,16 +66,16 @@ footer {
 
         .footer-social {
 
-            @include flex(row,space-between,center);
+            @include flex(row, space-between, center);
             list-style-type: none;
         }
 
         .social-links {
 
-            @include flex(row,center,center);
-            
+            @include flex(row, center, center);
 
-            & > li {
+
+            &>li {
 
                 margin: 0 5px;
             }

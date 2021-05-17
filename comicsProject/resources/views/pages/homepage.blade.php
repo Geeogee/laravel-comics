@@ -12,6 +12,21 @@
     </section>
 
     <section class="comics">
+        <div class="container">
+            <div class="section-label">
+                Current series
+            </div>
+            @foreach ($data as $comic)
+                <div class="comic">
+                    <div class="comic-cover">
+                        <img src="{{ $comic['thumb'] }}">
+                    </div>
+                    <div class="comic-name">
+                        {{ $comic['title'] }}
+                    </div>
+                </div>
+            @endforeach
+        </div>
     </section>
 
     <section class="merchandise">
