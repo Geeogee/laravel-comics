@@ -36,7 +36,7 @@
 
     .container {
 
-        @include flex(row,center,center);
+        @include flex(row, center, center);
         flex-wrap: wrap;
 
     }
