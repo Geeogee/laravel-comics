@@ -7,10 +7,6 @@
 @section('main')
 
 <main>
-    <section class="jumbotron">
-        <img src=" {{ asset('storage/assets/jumbotron.jpg') }}">
-    </section>
-
     <section class="comics">
         <div class="container">
             <div class="section-label">
@@ -19,10 +15,14 @@
             @foreach ($data as $comic)
                 <div class="comic">
                     <div class="comic-cover">
-                        <img src="{{ $comic['thumb'] }}">
+                        <a href=" {{ route('comic', $loop -> index) }} ">
+                            <img src="{{ $comic['thumb'] }}">
+                        </a>
                     </div>
                     <div class="comic-name">
-                        {{ $comic['title'] }}
+                        <a href="#">
+                            {{ $comic['title'] }}
+                        </a>
                     </div>
                 </div>
             @endforeach

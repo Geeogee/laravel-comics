@@ -55,5 +55,9 @@
                 </ul>
             </div>
         </nav>
-    </div>
+
+        <div class="jumbotron">
+            <img src=" {{ asset('storage/assets/jumbotron.jpg') }}">
+        </div>
+    
 </header>

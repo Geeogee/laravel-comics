@@ -1,16 +1,3 @@
-.jumbotron {
-
-    height: 400px;
-    width: 100%;
-
-    img {
-
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        object-position: right top;
-    }
-}
 
 .comics {
 
@@ -61,8 +48,19 @@
         .comic-name {
 
             min-height: 50px;
-            color: $white;
             text-transform: uppercase;
+
+            a {
+                text-decoration: none;
+                color: $white;
+
+                &:hover {
+                    
+                    text-decoration: underline;
+                }
+            }
+
+
         }
     }
 }
@@ -98,4 +96,112 @@
         }
     }
 
+}
+
+
+.comic {
+
+    padding: 50px 0;
+    
+    .comic-cover-bar {
+
+        width: 100%;
+        height: 60px;
+        background-color: $azure-radiance;
+        position: relative;
+
+        .wrapper-comic-cover {
+
+            position: absolute;
+            bottom: 20px;
+            left: 10%;
+            border: 2px solid $white;
+
+            img {
+
+                position: relative;
+            }
+
+            .label {
+                position: absolute;
+                background-color: $faux-cerulean;
+                z-index: 2;
+                color: $white;
+                text-transform: uppercase;
+            }
+
+            .comic-type-label {
+               
+                top: 0;
+                left: 0;
+                padding: 2px;
+            }
+
+            .view-gallery-label {
+
+                bottom: 0;
+                left: 0;
+                right: 0;
+                text-align: center;   
+            }
+        }
+    }
+
+    .container {
+
+        @include flex(row, null, flex-start);
+    }
+    .comic-info {
+        flex-basis: 70%;
+
+        .comic-title {
+            
+            color: $prussian-blue;
+            font-size: $large-font;
+            font-weight: 700;
+            text-transform: uppercase;  
+        }
+
+        .availability-bar {
+
+            @include flex(row, null, center);
+            padding: 0 10px;
+            height: 40px;
+            color: $acid-green;
+            font-weight: bold;
+            background-color: $rayquaza-green;
+            border-bottom: 1px solid $may-green;
+
+            .wrapper-price {
+
+                flex-grow: 1;
+
+                .price {
+    
+                    color: $white;
+                }
+            }
+
+            .availability {
+
+                text-transform: uppercase;
+                padding: 0 10px;
+            }
+
+            .select-check-availabilty {
+
+                @include flex(row,center,center);
+                height: 39px;
+                padding: 0 50px;
+                color: $white;
+                border-left: 1px solid $may-green;
+            }
+        }
+    }
+
+    .banner-adv {
+
+        background-color: blue;
+        flex-basis: 30%;
+    }
 }
