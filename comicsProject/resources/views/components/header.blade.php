@@ -12,7 +12,9 @@
             <div class="container">
                 <ul class="nav-bar">
                     <li>
-                        <img id="logo" src=" {{ asset('storage/assets/dc-logo.png')}}">
+                        <a href=" {{ route('homepage') }} ">
+                            <img id="logo" src=" {{ asset('storage/assets/dc-logo.png')}}">
+                        </a>
                     </li>
                     <li>
                         <ul class="nav-links">

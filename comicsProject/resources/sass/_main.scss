@@ -25,7 +25,6 @@
 
         @include flex(row, center, center);
         flex-wrap: wrap;
-
     }
 
     .comic {
@@ -59,8 +58,6 @@
                     text-decoration: underline;
                 }
             }
-
-
         }
     }
 }
@@ -98,11 +95,15 @@
 
 }
 
-
 .comic {
 
-    padding: 50px 0;
-    
+    .container {
+
+        @include flex(row, null, flex-start);
+        width: 70%;
+        padding: 50px 0;
+    }
+
     .comic-cover-bar {
 
         width: 100%;
@@ -114,7 +115,7 @@
 
             position: absolute;
             bottom: 20px;
-            left: 10%;
+            left: 15%;
             border: 2px solid $white;
 
             img {
@@ -147,26 +148,25 @@
         }
     }
 
-    .container {
-
-        @include flex(row, null, flex-start);
-    }
     .comic-info {
+
         flex-basis: 70%;
 
         .comic-title {
             
             color: $prussian-blue;
-            font-size: $large-font;
+            font-size: $extra-large-font;
             font-weight: 700;
-            text-transform: uppercase;  
+            text-transform: uppercase; 
+            display: inline-block;
+            padding: 20px 0;
         }
 
         .availability-bar {
 
             @include flex(row, null, center);
             padding: 0 10px;
-            height: 40px;
+            height: 50px;
             color: $acid-green;
             font-weight: bold;
             background-color: $rayquaza-green;
@@ -195,13 +195,118 @@
                 padding: 0 50px;
                 color: $white;
                 border-left: 1px solid $may-green;
+
+                .fa-caret-down {
+                    margin-left: 5px;
+                }
             }
+        }
+
+        .comic-description {
+            
+            font-size: $medium-font;
+            color: $charcoal;
+            line-height: 26px;
+            padding: 20px 0;
         }
     }
 
     .banner-adv {
 
-        background-color: blue;
+        @include flex(column,center,flex-end);
         flex-basis: 30%;
+
+        h3 {
+
+            color: $charcoal;
+            text-transform: uppercase;
+        }
     }
+
+    .comic-recap {
+
+        .container {
+
+            @include flex(row,space-between,null);
+        }
+
+        background-color: $light-grey;
+        border-top: 1px solid $whisper-grey;
+
+        .talent, .specs {
+
+            flex-basis: 45%;
+            
+            a {
+
+                text-decoration: none;
+                color: $gyarados-cyan;
+
+                &:hover {
+
+                    text-decoration: underline;
+                }
+            }
+
+            h2 {
+
+                color: $prussian-blue;
+                font-size: $large-font;
+                padding: 20px 0;
+                border-bottom: 1px solid $whisper-grey;
+            }
+
+            .artists, .writers, .series-type, .sale-date, .price {
+
+                @include flex(row, space-between, center);
+                padding: 10px 0;
+                border-bottom: 1px solid $whisper-grey;
+
+                .row-title {
+                    flex-basis: 40%;
+                }
+
+                .row-content {
+                    flex-basis: 60%;
+                }
+            }
+
+            .series-type a {
+
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .merchandise {
+
+        background-color: $light-grey;
+        border-top: 1px solid $whisper-grey;
+        padding: 0;
+
+        .container {
+
+            padding: 0;
+        }
+
+        ul {
+
+            list-style-type: none;
+            width: 100%;
+            @include flex(row, center, center);
+
+            & > li {
+                border-left: 1px solid $whisper-grey;
+                border-right: 1px solid $whisper-grey;
+                padding: 10px 20px;
+                color: $charcoal;
+                font-weight: 700;
+                text-transform: uppercase;
+                flex-basis: 25%;
+                @include flex(row,space-between,center);
+            }
+        }
+    }
+
+
 }

@@ -64,6 +64,6 @@
                 </li>
             </ul>
         </div>
-    <section> 
+    </section> 
 </main>
 @endsection
