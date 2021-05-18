@@ -19,34 +19,54 @@
                     <li>
                         <ul class="nav-links">
                             <li>
-                                Characters
+                                <a href="#">
+                                    Characters
+                                </a>
                             </li>
                             <li>
-                                Comics
+                                <a href="#">
+                                    Comics
+                                </a>
                             </li>
                             <li>
-                                Movies
+                                <a href="#">
+                                    Movies
+                                </a>
                             </li>
                             <li>
-                                Tv
+                                <a href="#">
+                                    Tv
+                                </a>
                             </li>
                             <li>
-                                Games
+                                <a href="#">
+                                    Games
+                                </a>
                             </li>
                             <li>
-                                Collectibles
+                                <a href="#">
+                                    Collectibles
+                                </a>
                             </li>
                             <li>
-                                Videos
+                                <a href="#">
+                                    Videos
+                                </a>
                             </li>
                             <li>
-                                Fans
+                                <a href="#">
+                                    Fans
+                                </a>
                             </li>
                             <li>
-                                News
+                                <a href="#">
+                                    News
+                                </a>
                             </li>
                             <li>
-                                Shop
+                                <a href="#">
+                                    Shop
+                                </a>
                             </li>
                         </ul>
                     </li>

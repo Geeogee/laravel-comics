@@ -45,13 +45,23 @@ nav {
             @include flex(row, center, center);
             list-style-type: none;
             text-transform: uppercase;
-            color: $charcoal;
             font-size: $medium-font;
             font-weight: 700;
 
-            &>li {
+            & > li {
 
                 margin: 0 20px;
+            }
+
+            a {
+
+                text-decoration: none;
+                color: $charcoal;
+
+                &:hover {
+
+                    color: $azure-radiance;
+                }
             }
         }
     }
